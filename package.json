@@ -1,7 +1,7 @@
 {
   "name": "sari-sari-pos",
   "version": "1.0.0",
-  "description": "Point-of-sale system for a small sari-sari store with admin and sales-representative roles.",
+  "description": "Point-of-sale system for Tindahan ni Juan with admin and sales-representative roles.",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
