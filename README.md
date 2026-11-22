@@ -1,6 +1,6 @@
-# Sari-Sari POS
+# Tindahan ni Juan
 
-A point-of-sale system for a small sari-sari store, with separate **Admin** and **Sales Representative (cashier)** roles. Built with Node.js, Express, EJS, and PostgreSQL, and deployable to Vercel.
+A point-of-sale system for Tindahan ni Juan, with separate **Admin** and **Sales Representative (cashier)** roles. Built with Node.js, Express, EJS, and PostgreSQL, and deployable to Vercel.
 
 ## Features
 
