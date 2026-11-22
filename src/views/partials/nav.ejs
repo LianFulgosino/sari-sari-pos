@@ -1,5 +1,10 @@
 <header class="topbar">
-  <div class="topbar-brand">🏪 Sari-Sari POS</div>
+  <div class="topbar-brand">
+    <a href="<%= currentUser ? (currentUser.role === 'admin' ? '/admin/dashboard' : '/pos') : '/login' %>">
+      <img src="/images/logo.jpg" alt="Seven Evelyn logo" class="topbar-logo">
+      <span>Seven Evelyn</span>
+    </a>
+  </div>
   <nav class="topbar-nav">
     <% if (currentUser && currentUser.role === 'admin') { %>
       <a href="/admin/dashboard">Dashboard</a>

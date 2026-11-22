@@ -39,6 +39,14 @@ a { color: var(--primary); }
 }
 
 .topbar-brand { font-weight: 700; font-size: 1.1rem; }
+.topbar-brand a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.topbar-logo { height: 32px; width: auto; }
 .topbar-nav { display: flex; gap: 1rem; flex: 1; }
 .topbar-nav a { text-decoration: none; color: var(--text); font-weight: 500; }
 .topbar-nav a:hover { color: var(--primary); }
@@ -85,6 +93,10 @@ a { color: var(--primary); }
   margin-bottom: 1.25rem;
 }
 
+@media (max-width: 800px) {
+  .stat-row { grid-template-columns: 1fr; }
+}
+
 .stat-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -94,6 +106,8 @@ a { color: var(--primary); }
 .stat-label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .stat-value { font-size: 1.8rem; font-weight: 700; margin-top: 0.25rem; }
 .stat-sub { color: var(--muted); font-size: 0.85rem; margin-top: 0.25rem; }
+
+.chart-wrap { position: relative; height: 240px; }
 
 .table { width: 100%; border-collapse: collapse; }
 .table th, .table td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); }
@@ -121,6 +135,7 @@ a { color: var(--primary); }
 }
 .form-grid input, .form-grid select,
 .login-card input,
+.login-card select,
 .form-inline input, .form-inline select {
   padding: 0.5rem;
   border: 1px solid var(--border);
@@ -168,7 +183,13 @@ a { color: var(--primary); }
   flex-direction: column;
   gap: 1rem;
 }
-.login-card h1 { margin: 0; font-size: 1.3rem; }
+.login-card h1 { margin: 0; font-size: 1.3rem; text-align: center; }
+.login-card > .muted:first-of-type { text-align: center; margin: 0; }
+.login-logo {
+  align-self: center;
+  max-height: 80px;
+  width: auto;
+}
 
 /* POS screen */
 .pos-layout {
